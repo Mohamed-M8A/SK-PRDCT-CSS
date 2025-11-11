@@ -508,15 +508,6 @@ body, html, #primary, #main, #main-content {
 }
 
 /* ============================
-   ✅ التاجات والبيانات المخفية
-============================== */
-
-.data
-{
-display:none;
-}
-
-/* ============================
    📱 موبايل صغير جداً
 ============================ */
 @media (max-width: 360px) {
@@ -553,7 +544,6 @@ display:none;
   .product-info { width: 100%; text-align: center; }
   .info-boxes-wrapper { grid-template-columns: repeat(2, 1fr); }
   .buy-button, .add-to-cart { width: 100% !important; font-size: 16px; height: 48px; }
-  /* الجدول لا يُمس 👑 */
 }
 
 /* ============================
