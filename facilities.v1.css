@@ -96,11 +96,6 @@
   transition: background 0.2s ease;
 }
 
-.Customer-Reviews .review:hover {
-  background: #fafafa;
-  border-radius: 12px;
-}
-
 .Customer-Reviews .review:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -134,12 +129,9 @@
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.Customer-Reviews .more-reviews-link a:hover {
   background-color: #554bdd;
-  transform: translateY(-2px);
+  transform: translateY(-2px); 
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 /* ============================
