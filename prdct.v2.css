@@ -185,113 +185,6 @@
 }
 
 /* ============================
-   ✅ الرسم البياني
-============================== */
-
-#chart-tooltip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
-  display: none;
-  opacity: 0;
-  background: rgba(50, 50, 50, 0.95);
-  color: #fff;
-  padding: 10px 12px;
-  border-radius: 8px;
-  font-size: 13px;
-  pointer-events: none;
-  transition: all 0.15s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  max-width: 220px;
-  line-height: 1.7;
-}
-
-.tooltip-line {
-  margin-bottom: 4px;
-}
-
-.tooltip-line:last-child {
-  margin-bottom: 0;
-}
-
-#chart-tooltip .stat-arrow {
-  font-weight: bold;
-  margin-right: 5px;
-  font-size: 15px;
-}
-
-#chart-tooltip .arrow-up {
-  color: #f44336;
-}
-
-#chart-tooltip .arrow-down {
-  color: #4caf50;
-}
-
-/* ✅ صندوق الإحصائيات */
-.price-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 18px;
-  padding: 16px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  direction: rtl;
-}
-
-/* ✅ عنصر إحصائي */
-.stat-item {
-  flex: 1 1 180px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #eee;
-}
-
-/* ✅ السهم */
-.stat-arrow {
-  font-size: 16px;
-  margin-right: 6px;
-}
-
-.arrow-up {
-  color: red;
-}
-
-.arrow-down {
-  color: green;
-}
-
-/* ✅ السعر الحالي يكون على اليسار (RTL) */
-.stat-item.current {
-  margin-right: auto;
-}
-
-/* ✅ Responsive للهواتف */
-@media (max-width: 600px) {
-  .price-stats {
-    flex-direction: column;
-  }
-
-  .stat-item {
-    flex: 1 1 100%;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .stat-item.current {
-    margin-right: 0;
-  }
-}
-
-/* ============================
    📱 موبايل صغير جداً
 ============================ */
 @media (max-width: 360px) {
@@ -341,7 +234,6 @@
   .price-box { align-items: center; }
   .short-description { text-align: center; }
   .thumbnail-container { justify-content: center; flex-wrap: wrap; }
-  .Customer-Reviews { padding: 20px; }
 }
 
 /* ============================
