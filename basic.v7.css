@@ -349,11 +349,11 @@
 
 .price-saving {
   display: inline-block;
-  background-color: #fff8b8;
+  background-color: #fffbdb;
   padding: 2px 5px;
   margin-left: 4px;
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
   border: 2px dashed #fbc02d;
 }
