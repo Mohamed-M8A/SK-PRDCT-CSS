@@ -249,17 +249,19 @@ body, html, #primary, #main, #main-content {
   transform: translate(0, 0);
   display: none;
   opacity: 0;
-  background: rgba(50, 50, 50, 0.95);
+  background: rgba(30, 41, 59, 0.95);
   color: #fff;
-  padding: 10px 12px;
-  border-radius: 8px;
+  padding: 12px 14px;
+  border-radius: 10px;
   font-size: 13px;
   pointer-events: none;
-  transition: all 0.15s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   z-index: 9999;
-  max-width: 220px;
+  max-width: 230px;
   line-height: 1.7;
+  border: 1px solid #334155;
+  backdrop-filter: blur(8px);
 }
 
 .tooltip-line {
@@ -271,61 +273,72 @@ body, html, #primary, #main, #main-content {
 }
 
 #chart-tooltip .stat-arrow {
-  font-weight: bold;
-  margin-right: 5px;
+  font-weight: 700;
+  margin-right: 6px;
   font-size: 15px;
 }
 
 #chart-tooltip .arrow-up {
-  color: #f44336;
+  color: #ef4444;
 }
 
 #chart-tooltip .arrow-down {
-  color: #4caf50;
+  color: #10b981;
 }
 
 /* ✅ صندوق الإحصائيات */
 .price-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 18px;
-  padding: 16px;
-  background: #f9f9f9;
-  border-radius: 10px;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 18px;
+  background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  border-radius: 14px;
   direction: rtl;
+  border: 1px solid #f1f5f9;
+  font-family: "Tajawal", sans-serif;
 }
 
 /* ✅ عنصر إحصائي */
 .stat-item {
   flex: 1 1 180px;
   background: #fff;
-  border-radius: 8px;
-  padding: 10px 12px;
+  border-radius: 10px;
+  padding: 12px 14px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* ✅ السهم */
 .stat-arrow {
   font-size: 16px;
   margin-right: 6px;
+  font-weight: 700;
 }
 
 .arrow-up {
-  color: red;
+  color: #ef4444;
 }
 
 .arrow-down {
-  color: green;
+  color: #10b981;
 }
 
-/* ✅ السعر الحالي يكون على اليسار (RTL) */
+/* ✅ السعر الحالي */
 .stat-item.current {
-  margin-right: auto;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-color: #bae6fd;
 }
 
 /* ✅ Responsive للهواتف */
@@ -344,3 +357,4 @@ body, html, #primary, #main, #main-content {
     margin-right: 0;
   }
 }
+
