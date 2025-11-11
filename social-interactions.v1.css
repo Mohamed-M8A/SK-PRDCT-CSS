@@ -28,10 +28,10 @@
   padding: 12px;
   margin-bottom: 18px;
   border-radius: 8px;
-  transition: box-shadow 0.3s ease;
 }
+
 .comment:hover {
-  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  background: #fafafa;
 }
 
 .comment .header,
@@ -79,12 +79,10 @@
   border-radius: 6px;
   padding: 10px;
   margin-bottom: 12px;
-  transition: box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .reply:hover {
   background: #eef5ff;
-  box-shadow: 0 2px 8px rgba(0,123,255,0.15);
 }
 
 .reply .body {
@@ -108,16 +106,12 @@
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-
   background-image: linear-gradient(90deg, #000000, #434343);
-  background-size: 200% 200%;
-  transition: box-shadow 0.2s ease;
 }
 
 .reply-btn:hover,
 .add-btn:hover {
-  animation: gradientShift 4s ease infinite;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  background-image: linear-gradient(90deg, #222, #555);
 }
 
 .reply-form,
@@ -125,6 +119,7 @@
   display: none;
   margin-top: 12px;
 }
+
 .reply-form.show,
 #main-comment-form.show {
   display: block;
@@ -135,12 +130,6 @@
   height: 260px;
   border: 1px solid #ddd;
   border-radius: 6px;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 /* =========================
