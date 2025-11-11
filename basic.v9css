@@ -8,8 +8,9 @@
   align-items: flex-start;
   gap: 20px;
   padding: 0;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border: 1px solid #e8eeff;
+  backdrop-filter: blur(10px); 
+  background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
   flex-wrap: wrap;
 }
 
