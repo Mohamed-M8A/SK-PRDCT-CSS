@@ -403,7 +403,7 @@
 }
 
 /* ============================
-   ✅ الأزرار (الشراء - السلة)
+   ✅ Buttons
 ============================== */
 
 .button-container {
@@ -686,7 +686,7 @@
 }
 
 /* ============================
-   ✅ تبويبات الصفحة
+   ✅ Tabs
 ============================== */
 /* ✅ تنسيق عام لأزرار التابات */
 .tab-buttons {
@@ -694,7 +694,7 @@
   margin-bottom: 20px;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 99;
   background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
   padding: 15px 0;
   border-bottom: 1px solid #e2e8f0;
