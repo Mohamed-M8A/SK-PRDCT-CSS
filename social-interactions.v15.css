@@ -15,7 +15,7 @@
 }
 
 #comments .title {
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 700;
   margin-bottom: 25px;
   color: #1a1a1a;
@@ -131,12 +131,12 @@
 }
 
 .comment .header .name {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #146aff;
 }
 
 .time {
-  font-size: 1em;
+  font-size: 0:8em;
   color: #777;
   margin-right: auto;
 }
