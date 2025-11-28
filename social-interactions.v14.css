@@ -1,6 +1,7 @@
 /* =========================
    ✅ COMMENTS
 ========================= */
+
 #comments {
   background: #ffffff;
   color: #333333;
@@ -98,7 +99,7 @@
 .reply {
     padding: 15px;
     margin-bottom: 10px;
-    background-color: #d1ddf0;
+    background-color: #d5e0f0;
     border-radius: 8px;
 }
 
@@ -130,18 +131,18 @@
 }
 
 .comment .header .name {
-  font-size: 1em;
+  font-size: 1.5em;
   color: #146aff;
 }
 
 .time {
-  font-size: 0.8em;
+  font-size: 1em;
   color: #777;
   margin-right: auto;
 }
 
 .body {
-    line-height: 1.6;
+    line-height: 1.8;
     margin-right: 50px;
 }
 
