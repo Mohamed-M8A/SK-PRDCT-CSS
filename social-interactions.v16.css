@@ -192,50 +192,117 @@
 /* =========================
    ✅ SHARE BUTTONS
 ========================= */
-.share-box .share-title {
+.share-open-btn {
+  margin: 20px 0; 
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #146aff; 
+  color: white;
+  border: 2px solid #146aff; 
+  box-shadow: 0 4px 10px rgba(20, 106, 255, 0.4); 
+  cursor: pointer;
+  border-radius: 30px; 
+  font-size: 16px;
+  font-weight: 700; 
+  transition: all 0.3s ease;
+}
+
+.share-open-btn:hover {
+  background-color: #004dcc;
+  border-color: #004dcc;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.share-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 30px 20px; 
+  border: none;
+  width: 90%; 
+  max-width: 400px; 
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: right; 
+}
+
+.modal-close-btn {
+  color: #aaa;
+  float: left; 
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: #146aff;
+}
+
+.modal-content .modal-title {
   font-size: 1.5em;
   font-weight: 600;
-  text-align: center;
   color: #146aff;
-  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 25px; 
+  padding-bottom: 0;
+  border-bottom: none;
   text-align: center;
 }
 
-.share-box .share-links {
+.modal-content .share-links {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px; 
+  padding: 10px 0;
 }
 
-.share-box .share-btn {
+.modal-content .share-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 50%; 
   background-color: #ffffff;
   color: #333333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  font-size: 0; 
 }
 
-.share-box .share-btn svg {
-  width: 30px;
-  height: 30px;
+.modal-content .share-btn svg {
+  width: 25px; 
+  height: 25px;
   fill: currentColor;
 }
 
-.share-box .share-btn:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.modal-content .share-btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   color: #ffffff;
+  transform: translateY(-2px); 
+  border-color: transparent; 
 }
 
-.share-box .s-fb:hover { background-color: #4267b2; }
-.share-box .s-x:hover { background-color: #000000; }
-.share-box .s-pin:hover { background-color: #e60023; }
-.share-box .s-wa:hover { background-color: #25d366; }
-.share-box .s-tg:hover { background-color: #0088cc; }
-.share-box .s-rd:hover { background-color: #ff4500; }
-.share-box .s-em:hover { background-color: #ffaf38; }
+.modal-content .s-fb:hover { background-color: #4267b2; }
+.modal-content .s-x:hover { background-color: #000000; }
+.modal-content .s-pin:hover { background-color: #e60023; }
+.modal-content .s-wa:hover { background-color: #25d366; }
+.modal-content .s-tg:hover { background-color: #0088cc; }
+.modal-content .s-rd:hover { background-color: #ff4500; }
+.modal-content .s-em:hover { background-color: #ffaf38; }
